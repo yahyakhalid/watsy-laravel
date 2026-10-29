@@ -1,0 +1,24 @@
+name: Bug report
+description: Something in the package does not work as documented.
+labels: [bug]
+body:
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: Package, Laravel and PHP versions.
+      placeholder: watsy/laravel 0.1.1, Laravel 12, PHP 8.3
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got. Include the error code and request ID if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: Code to reproduce
+      render: php
