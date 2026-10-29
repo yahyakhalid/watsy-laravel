@@ -1,0 +1,33 @@
+{
+    "name": "watsy/laravel",
+    "description": "Official Laravel package for Watsy: verification codes (OTP) over WhatsApp, Telegram and SMS for Iraq.",
+    "keywords": ["watsy", "otp", "verification", "whatsapp", "telegram", "sms", "iraq", "laravel"],
+    "homepage": "https://docs.watsy.me",
+    "license": "MIT",
+    "authors": [{ "name": "akkadX", "email": "support@watsy.me" }],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.5",
+        "illuminate/support": "^10.0 || ^11.0 || ^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": { "Watsy\\Laravel\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Watsy\\Laravel\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Watsy\\Laravel\\WatsyServiceProvider"],
+            "aliases": { "Watsy": "Watsy\\Laravel\\Facades\\Watsy" }
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": { "sort-packages": true },
+    "minimum-stability": "stable"
+}
