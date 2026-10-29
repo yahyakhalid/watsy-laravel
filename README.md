@@ -1,5 +1,7 @@
 # watsy/laravel
 
+[![Latest version](https://img.shields.io/packagist/v/watsy/laravel)](https://packagist.org/packages/watsy/laravel) [![Tests](https://github.com/yahyakhalid/watsy-laravel/actions/workflows/tests.yml/badge.svg)](https://github.com/yahyakhalid/watsy-laravel/actions/workflows/tests.yml) [![PHP](https://img.shields.io/packagist/dependency-v/watsy/laravel/php)](composer.json) [![License](https://img.shields.io/packagist/l/watsy/laravel)](LICENSE)
+
 Official Laravel package for [Watsy](https://watsy.me): verification codes (OTP) for Iraq over WhatsApp, with automatic fallback to Telegram and SMS.
 
 - Laravel 10, 11, 12 and 13 (PHP 8.1+); the client also works without Laravel.
