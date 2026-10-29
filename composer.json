@@ -1,10 +1,30 @@
 {
     "name": "watsy/laravel",
     "description": "Official Laravel package for Watsy: verification codes (OTP) over WhatsApp, Telegram and SMS for Iraq.",
-    "keywords": ["watsy", "otp", "verification", "whatsapp", "telegram", "sms", "iraq", "laravel"],
+    "keywords": [
+        "watsy",
+        "otp",
+        "verification",
+        "whatsapp",
+        "telegram",
+        "sms",
+        "iraq",
+        "laravel"
+    ],
     "homepage": "https://docs.watsy.me",
     "license": "MIT",
-    "authors": [{ "name": "akkadX", "email": "support@watsy.me" }],
+    "authors": [
+        {
+            "name": "akkadX",
+            "email": "support@watsy.me"
+        }
+    ],
+    "support": {
+        "email": "support@watsy.me",
+        "issues": "https://github.com/yahyakhalid/watsy-laravel/issues",
+        "source": "https://github.com/yahyakhalid/watsy-laravel",
+        "docs": "https://docs.watsy.me"
+    },
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.5",
@@ -14,20 +34,30 @@
         "phpunit/phpunit": "^10.5 || ^11.0"
     },
     "autoload": {
-        "psr-4": { "Watsy\\Laravel\\": "src/" }
+        "psr-4": {
+            "Watsy\\Laravel\\": "src/"
+        }
     },
     "autoload-dev": {
-        "psr-4": { "Watsy\\Laravel\\Tests\\": "tests/" }
+        "psr-4": {
+            "Watsy\\Laravel\\Tests\\": "tests/"
+        }
     },
     "extra": {
         "laravel": {
-            "providers": ["Watsy\\Laravel\\WatsyServiceProvider"],
-            "aliases": { "Watsy": "Watsy\\Laravel\\Facades\\Watsy" }
+            "providers": [
+                "Watsy\\Laravel\\WatsyServiceProvider"
+            ],
+            "aliases": {
+                "Watsy": "Watsy\\Laravel\\Facades\\Watsy"
+            }
         }
     },
     "scripts": {
         "test": "phpunit"
     },
-    "config": { "sort-packages": true },
+    "config": {
+        "sort-packages": true
+    },
     "minimum-stability": "stable"
 }
