@@ -19,7 +19,9 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 ### Changed
 - Republished the 0.1.0 code under a new tag. No code changes.
 
-## [0.1.0] - 2026-10-29
+## 0.1.0 - 2026-10-29
+
+The `v0.1.0` tag has been withdrawn. Use 0.1.1, which ships the same code.
 
 ### Added
 - `WatsyClient` for the Watsy v1 API: `verify`, `check`, `verification`, `cancel`, `messages` and `balance`.
@@ -29,5 +31,4 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and 
 - Idempotency keys for safe retries.
 
 [Unreleased]: https://github.com/yahyakhalid/watsy-laravel/compare/v0.1.1...HEAD
-[0.1.1]: https://github.com/yahyakhalid/watsy-laravel/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/yahyakhalid/watsy-laravel/releases/tag/v0.1.0
+[0.1.1]: https://github.com/yahyakhalid/watsy-laravel/tree/v0.1.1
